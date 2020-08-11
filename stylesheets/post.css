@@ -1,0 +1,211 @@
+ article {
+  padding: 50px 0 70px;
+}
+
+article h1,
+article h2,
+article h3,
+article h4,
+article ol,
+article ul,
+article p,
+article blockquote {
+  width: 701px;
+  margin: auto;
+}
+
+article img {
+  width: 1020px;
+  margin: auto;
+  display: block;
+}
+
+article p + img {
+  margin-top: 82px;
+}
+
+article h2 + img,
+article h3 + img,
+article h4 + img {
+  margin-top: 82px;
+}
+
+article img + p,
+article img + blockquote,
+article img + ul {
+  margin-top: 78px;
+}
+
+article img + h3
+article img + h4 {
+  margin-top: 80px;
+}
+
+article h1,
+article h2,
+article h3,
+article h4 {
+  font-family: 'PT Sans Caption', sans-serif;
+  font-weight: bold;
+}
+
+article p {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 22px;
+  line-height: 34px;
+  margin-top: 30px;
+}
+
+article h1 {
+  font-size: 40px;
+  line-height: 46px;
+  margin-top: 63px;
+}
+
+article h1 + p {
+  font-family: 'PT Sans Caption', sans-serif;
+  font-size: 22px;
+  line-height: 32px;
+  color: rgba(0, 0, 0, 0.4);
+  margin-top: 45px;
+}
+
+article h2 {
+  font-size: 32px;
+  line-height: 36px;
+  margin-top: 77px;
+}
+
+article h4 + p,
+article h2 + p,
+article h3 + p,
+article h2 + blockquote,
+article h4 + blockquote,
+article h2 + ul,
+article h3 + ul,
+article h4 + ul,  {
+  margin-top: 7px;
+}
+
+article p + h2 {
+  font-size: 32px;
+  line-height: 37px;
+  margin-top: 42px;
+}
+
+article h3 {
+  font-size: 28px;
+  line-height: 34px;
+  margin-top: 36px;
+}
+
+article p + blockquote {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 35px;
+  margin-top: 29px;
+}
+
+article blockquote {
+  position: relative;
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 35px;
+}
+
+article blockquote::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background: black;
+  margin-left: -20px;
+}
+
+article h4 {
+  font-size: 24px;
+  line-height: 30px;
+  margin-top: 34px;
+}
+
+article ul {
+  font-family: "PT Sans";
+  font-size: 22px;
+  line-height: 35px;
+  margin-top: 29px;
+}
+
+article li {
+  font-size: 22px;
+  line-height: 35px;
+  margin-top: 17px;
+}
+
+article ul + p {
+  font-size: 22px;
+  line-height: 34px;
+  margin-top: 63px;
+}
+
+article ul li {
+  list-style: disc;
+}
+
+article ol li {
+  list-style: decimal;
+  width: 680px;
+  margin-left: 20px;
+}
+
+article h1 + h2 {
+  margin-top: 42px;
+}
+
+article h1 + blockquote {
+  margin-top: 30px;
+}
+
+article blockquote + h2 {
+  margin-top: 30px;
+}
+
+article i {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 22px;
+  font-style: italic;
+}
+
+article b {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+  article img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  article h1,
+  article h2,
+  article h3,
+  article h4,
+  article ol,
+  article ul,
+  article p,
+  article blockquote {
+    width: calc(100% - 20px);
+  }
+
+  article ol li {
+    list-style: decimal;
+    width: calc(100% - 40px);
+  }
+}
