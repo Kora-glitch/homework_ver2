@@ -1,6 +1,6 @@
 body.landing {
-  background-image: url('../images/2560.jpg');
-  background-position: top center -50px;
+  
+  background-position: center -50px;
   background-repeat: no-repeat;
 }
 
@@ -18,7 +18,7 @@ body.landing {
 
 .contentWrapper p {
   margin-top: 22px;
-  font-family: 'PT Sans Caption', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 26px;
   line-height: 38px;
 }
@@ -29,6 +29,14 @@ body.landing {
 
 #section-1 {
   position: relative;
+  width: 1920px;
+  height: 850px;
+}
+
+#section-1 .textContainer {
+  position: absolute;
+  top: 130px;
+  left: 120px;
 }
 
 #section-1-image {
@@ -54,8 +62,8 @@ body.landing {
 
 #section-2 .contentContainer .textContainer {
   position: absolute;
-  top: 58px;
-  left: 743px;
+  top: 65px;
+  right: 0;
 }
 
 #section-2-image {
@@ -67,16 +75,25 @@ body.landing {
   height: 674px;
 }
 
-#section-3-image {
-  background-image: url('../images/desctop-section-3-large.jpg');
-  width: 1392px;
-  height: 883px;
+#section-3 {
+  position: relative;
+  width: 1920px;
+  height: 850px;
 }
 
-#section-4 .textContainer {
+#section-3 .textContainer {
   position: absolute;
   top: 130px;
-  left: 120px;
+  left: 110px;
+}
+
+#section-3-image {
+  position: absolute;
+  top: 140px;
+  left: 823px;
+  background-image: url('../images/desctop-section-3-large.jpg');
+  width: 1088px;
+  height: 702px;
 }
 
 #section-4 .textContainer {
@@ -86,7 +103,37 @@ body.landing {
 }
 
 #section-4 {
-  padding-top: 128px;
+  padding-top: 130px;
+}
+
+#section-4 .buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+#section-4 .primary,
+#section-4 .secondary {
+  display: block;
+  height: 52px;
+  line-height: 52px;
+  padding: 0 34px;
+  border-radius: 5px;
+  font-family: 'PT Sans Caption', sans-serif;
+  font-size: 16px;
+}
+
+#section-4 .primary {
+  font-weight: bold;
+  color: white;
+  background: black;
+}
+
+#section-4 .secondary {
+  color: #666666;
+  background: white;
+  border: 1px solid #CCCCCC;
+  margin-right: 20px;
 }
 /*
 @media (max-width: 1920px) {
