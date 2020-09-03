@@ -2,7 +2,8 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1920px;
+  width: 100%;
+  max-width: 1920px;
   height: 60px;
   margin: 0 auto;
   margin-top: -60px;
